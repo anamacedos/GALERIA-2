@@ -1,0 +1,28 @@
+*{
+    padding: 0; /*configurações para tirar as margens padrão do navegador*/
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightpink;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 16px;
+
+}
+.container div{
+    height: 400px;
+    flex-grow: 1;
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+.container img:hover{
+    transform: scale(1.3);
+}
